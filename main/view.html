@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESP32 Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <style>
+        body {
+            background-color: #87CEEB;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff;
+            background-color: #4682B4;
+            padding: 15px;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            color: #ffffff;
+            background-color: #5A9BD4;
+            padding: 10px;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        th {
+            background-color: #4682B4;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+
+        .parameter {
+            color: #007ACC; /* Xanh dương đậm */
+        }
+
+        .value {
+            color: #FF4500; /* Cam sáng */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ESP32 Monitoring System</h1>
+    <h3>L01 - GROUP 15</h3>
+
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td class="parameter">Soil Moisture</td>
+            <td class="value">%d &#37;</td>
+        </tr>
+        <tr>
+            <td class="parameter">Water Load (Weight)</td>
+            <td class="value">%f kg</td>
+        </tr>
+        <tr>
+            <td class="parameter">Light Intensity</td>
+            <td class="value">%d lux</td>
+        </tr>
+        <tr>
+            <td class="parameter">Temperature</td>
+            <td class="value">%d &deg;C</td>
+        </tr>
+        <tr>
+            <td class="parameter">Humidity</td>
+            <td class="value">%d &#37;</td>
+        </tr>
+        <tr>
+            <td class="parameter">Plant Status</td>
+            <td class="value">%s</td>
+        </tr>
+        <tr>
+            <td class="parameter">Inlet Pump Status</td>
+            <td class="value">%s</td>
+        </tr>
+        <tr>
+            <td class="parameter">Outlet Pump Status</td>
+            <td class="value">%s</td>
+        </tr>
+    </table>
+</body>
+
+</html>
